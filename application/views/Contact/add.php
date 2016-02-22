@@ -56,7 +56,7 @@ div.well.validation-errors{
 <ul>
   <li><a href="<?php echo site_url('contact/index'); ?>">Home</a></li>
   <li><a class="active" href="<?php echo site_url('contact/add'); ?>">Add
-  <li><a href="#about">About</a></li>
+  <li><a href="<?php echo site_url('contact/about'); ?>">About</a></li>
 </ul>
 <div class="container add">
 <div class="well validation-errors"><h3 style="color", "black"> Create A Contact! </h3>

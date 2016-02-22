@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 <ul class="inverse">
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="<?php echo site_url('contact/add'); ?>">Add</a></li>
-  <li><a href="#about">About</a></li>
+    <li><a href="<?php echo site_url('contact/about'); ?>">About</a></li>
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
