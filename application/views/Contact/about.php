@@ -44,6 +44,7 @@
       background-color: #555;
       color: white;
       z-index: 1;
+      border-color: #45ba7d;
     }
     .wrapper {
     position: fixed;
