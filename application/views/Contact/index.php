@@ -51,7 +51,6 @@ li a:hover:not(.active) {
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
   <div class="pull-right">
   </div>
-
   <table class="table table-striped">
       <tr>
       <td>ID</td>
@@ -62,14 +61,14 @@ li a:hover:not(.active) {
       </tr>
     <?php foreach($Contacts as $C): ?>
       <tr>
-      <td><?php echo $C['id']; ?></td>
-      <td><?php echo $C['name']; ?></td>
-      <td><?php echo $C['email']; ?></td>
-      <td><?php echo $C['comments']; ?></td>
-      <td>
-              <a href="<?php echo site_url('contact/edit/'.$C['id']); ?>" class="btn btn-info">Edit</a>
-              <a href="<?php echo site_url('contact/remove/'.$C['id']); ?>" class="btn btn-danger">Delete</a>
-          </td>
+        <td><?php echo $C['id']; ?></td>
+        <td><?php echo $C['name']; ?></td>
+        <td><?php echo $C['email']; ?></td>
+        <td><?php echo $C['comments']; ?></td>
+        <td>
+        <a href="<?php echo site_url('contact/edit/'.$C['id']); ?>" class="btn btn-info">Edit</a>
+        <a href="<?php echo site_url('contact/remove/'.$C['id']); ?>" class="btn btn-danger">Delete</a>
+        </td>
       </tr>
     <?php endforeach; ?>
   </table>
