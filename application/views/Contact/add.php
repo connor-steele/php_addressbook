@@ -30,7 +30,9 @@
             background-color: #45ba7d;
             color: white;
         }
-
+      .robotic {
+       display: none;
+        }
       li a:hover:not(.active) {
             background-color: #555;
             color: white;
@@ -79,6 +81,17 @@
             <input type="text" name="comments" value="<?php echo $this->input->post('comments'); ?>" class="form-control" id="comments" />
           </div>
         </div>
+        <input type="hidden" name="loadtime" value="<?php echo time(); ?>" />
+        <? php
+          $loadtime = $_POST['loadtime'];
+          $totaltime = time() - $loadtime;
+          if($totaltime < 7)
+          {
+          $url='http://www.danhatesspam.com/';
+          header ("Location: ".$url);
+          exit();
+          }
+        ?>
         <div class="form-group">
           <div class="col-sm-offset-4 col-sm-8">
             <button type="submit" class="btn btn-success">Save</button>
